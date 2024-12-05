@@ -1,4 +1,5 @@
 const arr = document.querySelectorAll(".nav-container>li");
+document.querySelector("canvas").style.opacity = 1;
 
 arr.forEach((e, index) => {
   e.addEventListener("click", () => {
