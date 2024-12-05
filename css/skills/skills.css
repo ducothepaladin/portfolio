@@ -1,0 +1,197 @@
+.skill-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 73vh;
+}
+
+.skill-container > div {
+  width: 600px;
+  padding: 5px;
+}
+
+.skill-wheel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:visible;
+}
+
+.wheel {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  border-top: 3px solid var(--sec-color);
+  border-bottom: 3px solid var(--sec-color);
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+.wheel::-webkit-scrollbar {
+    display: none;
+}
+
+.wheel > div {
+  text-align: start;
+  padding: 0 40px;
+  position: relative;
+  margin: 4% auto;
+  font-size: 2.5rem;
+  color: var(--back-color);
+  /* background-color: var(--main-color); */
+  background-image: url("../../img/buttons//Carved_3Slides.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+  overflow: visible;
+  z-index: 1002;
+}
+
+/* .wheel > div:active {
+  background-color: rgba(92, 29, 2, 0.258);
+} */
+
+.wheel-normal {
+  width: 150px;
+  height: 100px;
+  line-height: 100px;
+  box-shadow: unset;
+  transform: skewX(10deg);
+  background-position:0 15px;
+}
+
+.wheel-add {
+  height:  130px;
+  width: 180px;
+  line-height: 150px;
+  /* box-shadow: 0 0 10px 1px var(--sec-color); */
+  background-position:0 30px;
+  transform: translateX(30px);
+  filter: drop-shadow(0 0 5px var(--help-color));
+}
+
+.check-point {
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  border: 1px solid var(--sec-color);
+  right: -20px;
+  z-index: 1002;
+  top: 30%;
+}
+
+.wheel span:nth-child(2) {
+  transform: rotate(90deg);
+  border-color: white transparent;
+}
+
+.skill-display {
+  position: relative;
+  border-left: 1px solid var(--sec-color);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 400px;
+}
+
+.link {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  border: 2px solid var(--sec-color);
+  left: -50px;
+}
+
+.skill-detail {
+  color: var(--sec-color);
+  height: auto;
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.skill-detail-add {
+  animation: slideDetail 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skill-detail > p {
+  text-align: justify;
+}
+
+/* .skill-detail>h2 {
+  height: 100px;
+  width: auto;
+  line-height: 80px;
+  background-image: url("../../img/buttons/Ribbon_Red_3Slides.png");
+  background-position: center;
+  background-size: contain;
+  overflow: visible;
+  background-repeat: no-repeat;
+  text-align: center;
+} */
+
+.progress {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  border: 1px solid var(--sec-color);
+}
+
+.progress > span {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+
+@keyframes slideDetail {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .skill-detail {
+    font-size: 0.8rem;
+  }
+
+  .skill-display {
+    border: none;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .skill-container {
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap-reverse;
+  }
+
+  .wheel-add {
+    transform: translate(0);
+    background-position:0 35px;
+  }
+
+  .wheel {
+    height: 350px;
+    width: 350px;
+  }
+
+  .wheel > div {
+    padding-left: 10px;
+    pointer-events: none;
+  }
+}

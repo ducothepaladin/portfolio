@@ -1,0 +1,65 @@
+.contact-container {
+  width: 90vw;
+  height: 65vh;
+  margin: 0 auto;
+  margin-top: 8%;
+  color: var(--sec-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container > div {
+  z-index: 1030;
+}
+
+.contact-display > p {
+  font-size: 5.5rem;
+  color: var(--sec-color);
+  text-align: center;
+  font-family: "fantasy", serif;
+}
+
+.link-appear {
+  margin: 0 auto;
+  padding-left: 20px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.link-animate {
+  opacity: 1;
+}
+
+.link-appear > li > a {
+  font-size: 5rem;
+}
+
+@media (max-width: 1300px) {
+  .contact-display > p {
+    font-size: 3rem;
+  }
+
+  .link-appear {
+    gap: 5px;
+  }
+
+  .link-appear > li > a {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+
+    .contact-container {
+        padding-top: 20%;
+      }
+
+  .contact-display > p {
+    font-size: 2rem;
+  }
+
+  .link-appear > li > a {
+    font-size: 2rem;
+  }
+}

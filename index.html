@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DucoThePaladin</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/default_profile.webp">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/effects.css">
+    <script src="./js/Helpers/variables.js" defer></script>
+    <script src="./js/classes/Text.js" defer></script>
+    <script src="./js/utils/common.js" defer></script>
+    <script src="./js/data/collision.js" defer></script>
+    <script src="./js/classes/Player.js" defer></script>
+    <script src="./js/classes/Sprite.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/events/movementEvent.js" defer></script>
+  </head>
+  <body>
+    <div class="bg-animation">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div id='stars4'></div>
+    </div>
+    <div class="canvas-container">
+      <canvas id="canvas"> </canvas>
+      <div id="player-text" class="player-text">
+        This is character's talking bar
+      </div>
+      <div class="navbar">
+        <div>
+          <h1>Wai Yan Linn</h1>
+          <p>
+            Hello, and welcome to my portfolio!My name is
+            <span style="font-size: 1.2rem; color: rgb(144, 221, 240)"
+              >Wai Yan Linn</span
+            >.<br /><br />You can navigate to specific pages by clicking the
+            navigation blocks below, or control my little assistant, 'Duco,' to
+            explore each room. Thank you in advance for reaching out to me.
+            Enjoy your stay!
+          </p>
+        </div>
+        <ul class="nav-container">
+          <li>
+            About Me <span><i class="fa-regular fa-address-card"></i></span>
+          </li>
+          <li>
+            Skills <span><i class="fa-solid fa-seedling"></i></span>
+          </li>
+          <li>
+            Projects <span><i class="fa-regular fa-rectangle-list"></i></span>
+          </li>
+          <li>
+            Certificates <span><i class="fa-solid fa-graduation-cap"></i></span>
+          </li>
+          <li>
+            Contact Me <span><i class="fa-regular fa-envelope"></i></span>
+          </li>
+        </ul>
+        <h3>Here are the key infos to control "Duco".</h3>
+        <div class="mobile-control">
+          <div class="movement-control">
+            <button class="movement-icon left-btn">Left</button>
+            <button class="movement-icon right-btn">Right</button>
+          </div>
+          <div class="movement-control">
+            <button class="movement-icon jump-btn">Jump</button>
+            <button class="movement-icon enter-btn">E</button>
+          </div>
+        </div>
+        <div class="info">
+          <div class="key-container">
+            <div class="key w">
+              w<br />
+              <div>(Jump)</div>
+            </div>
+            <div class="key a">a<br />(Move Left)</div>
+            <div class="key d">d<br />(Move Right)</div>
+          </div>
+          <div class="key-container">
+            <div class="key w">
+              <i class="fa-solid fa-arrow-up"></i><br />(Jump)
+            </div>
+            <div class="key a">
+              <i class="fa-solid fa-arrow-left"></i><br />(Move Left)
+            </div>
+            <div class="key d">
+              <i class="fa-solid fa-arrow-right"></i><br />(Move Right)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

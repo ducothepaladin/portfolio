@@ -1,0 +1,84 @@
+@import url(./info.css);
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+NG+Modern:wght@100..400&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+@font-face {
+    font-family: "fantasy"; /* Choose a name for your font */
+    src: url("../font/DungeonFont.ttf") format("truetype"); /* Adjust path as needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+:root {
+    box-sizing: border-box;
+    font-family: "Nunito", serif;
+    --main-color: #5f382f;
+    --back-color: #323443;
+    --sec-color: #f1d9d3;
+    --help-color: #85dcf9;
+    cursor: url("../img/buttons/01.png") 20 20, auto;
+}
+
+a{
+    cursor: url("../img/buttons/01.png") 20 20, auto;
+}
+
+body {
+    background-color: var(--back-color) ;
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+
+/* section {
+    height: 80vh;
+} */
+
+.canvas-container {
+    position: relative;
+    margin-left: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.titles {
+    padding: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: "fantasy", serif;
+    font-size: 2rem;
+    color: var(--back-color);
+    background-image: url("../img/buttons/Ribbon_Yellow_3Slides.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(0 0 5px white);
+}
+
+body::-webkit-scrollbar {
+    display: none;    
+}
+
+canvas {
+    transition: all 1s;
+}
+
+@media (max-width: 1000px) {
+    .canvas-container {
+        display: block;
+        margin-left: 0;
+    }
+
+    .navbar {
+        width: 1140px;
+        margin-left: 0;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .mobile-control {
+        display: flex;
+    }
+}

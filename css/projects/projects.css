@@ -1,0 +1,188 @@
+.projects-container {
+    display: flex;
+    width: 90%;
+    height: auto;
+    color: var(--sec-color);
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 2%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+.projects-container>div {
+    width: 50%;
+    min-height: 800px;
+    height: auto;
+    
+}
+
+.project-button {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-button>div {
+    font-weight: bold;
+    width: 400px;
+    height: 100px;
+    line-height: 80px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 1030;
+}
+
+.clicked {
+    color: var(--sec-color);
+    font-size: 1.1rem;
+    line-height: 70px;
+    background-image: url("../../img/buttons/Button_Red_3Slides_Pressed.png");
+}
+
+.unclick {
+    color: var(--back-color);
+    font-size: 1.2rem;
+    background-image: url("../../img/buttons/Button_Red_3Slides.png");
+    filter: drop-shadow(0 0 3px white);
+}
+
+
+.project-display>div {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+}
+
+.project-display p {
+    text-align: justify;
+}
+
+.vid-display {
+    position: relative;
+}
+
+.vid-display>video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 10px white);
+}
+
+.frame {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    z-index: 1001;
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.frame:first-child {
+    background-image: url("../../img/buttons/03.png");
+    top: 0;
+    left: 0;
+}
+
+.frame:nth-child(2) {
+    background-image: url("../../img/buttons/04.png");
+    top: 0;
+    right: 0;
+}   
+
+.frame:nth-child(3) {
+    background-image: url("../../img/buttons/03.png");
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}   
+
+.frame:nth-child(4) {
+    background-image: url("../../img/buttons/04.png");
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.load {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    .projects-container {
+        flex-wrap: wrap;
+    }
+
+    .projects-container {
+        width: 100%;
+    }
+
+    .projects-container>div {
+        width: 100%;
+    }
+
+    .project-button {
+        position: absolute;
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        justify-content: start;
+        align-items: start;
+        left: -2%;
+        top: 30%;
+    }
+
+    .project-button>div {
+        width: 45px;
+        height: 45px;
+    }
+
+    .project-button>div>span {
+        display: none;
+    }
+
+    .clicked {
+        color: var(--sec-color);
+        font-size: 0.9rem;
+        line-height: 70px;
+        background-image: url("../../img/buttons/Button_Red_Pressed.png");
+    }
+    
+    .unclick {
+        color: var(--back-color);
+        font-size: 1rem;
+        background-image: url("../../img/buttons/Button_Red.png");
+        filter: drop-shadow(0 0 3px white);
+    }
+
+    .vid-display video {
+        object-fit: contain;
+    }
+
+    .frame {
+        width: 30px;
+        height: 30px;
+    }
+}
+

@@ -1,0 +1,174 @@
+.player-text {
+    position: absolute;
+    z-index: 3;
+    background-image: url("../img/buttons/Carved_3Slides.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: drop-shadow(0 0 10px var(--back-color));
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: hidden;
+    width: 400px;
+    height: auto;
+    font-size: 1.3rem;
+    line-height: 19px;
+    color: var(--back-color);
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    padding: 38px;
+    transition: 0.8s ease-out;
+}
+
+.player-text>p {
+    padding: 0;
+    margin: 0;
+    text-align: start;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    font-size: 1rem;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-width: 300px;
+    color: var(--sec-color);
+    overflow-y: scroll;
+    overflow-x: visible;
+    margin: 0;
+    padding: 0 2%;
+    margin-right: 20px;
+}
+
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap:5px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color: var(--sec-color);
+}
+
+.nav-container li {
+    list-style: none;
+    position: relative;
+    font-size: 0.8rem;
+    color: var(--sec-color);
+    height: 60px;
+    flex: 1 0 90px;
+    background-color: var(--main-color);
+    padding: 10px;
+    transition: 0.1s;
+}
+
+.nav-container>li:active {
+    transform: scale(0.9);
+}
+
+a {
+    color: var(--sec-color);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+a:active {
+    color: var(--back-color);
+}
+
+.nav-container li span {
+    position: absolute;
+    top: 43%;
+    left: 42%;
+    font-size: 1.2rem;
+}
+
+.info {
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff15;
+    margin: 0;
+    padding: 5px;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-container {
+    position: relative;
+    margin-top: 25px;
+    gap: 5px;
+    width: 250px;
+    height: 200px;
+}
+
+.key {
+    width: 95px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--sec-color);
+}
+
+.w {
+    position: absolute;
+    top: 0;
+    left: calc(70% - 108px);
+}
+.a {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.d {
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 108px);
+}
+
+.mobile-control {
+    width: 100%;
+    height: 200px;
+    background-color: var(--back-color);
+    margin: 0;
+    padding: 5px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.movement-control {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    margin: 0 20px;
+}
+
+.movement-icon {
+    width: 180px;
+    background-color: var(--main-color);
+    height: 150px;
+    user-select: none;
+    line-height: 100px;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--sec-color);
+}
