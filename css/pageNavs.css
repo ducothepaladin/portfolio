@@ -1,7 +1,7 @@
 header{
     position: sticky;
+    width: 100%;
     top: -1px;
-    margin: 0 5%;
     padding: 0;
     z-index: 1005;
 }
@@ -58,6 +58,7 @@ body {
     background-image: url("../../img/back.png");
     background-size: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .pagesFooter {

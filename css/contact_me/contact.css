@@ -33,6 +33,7 @@
 
 .link-appear > li > a {
   font-size: 5rem;
+  position: relative;
 }
 
 @media (max-width: 1300px) {

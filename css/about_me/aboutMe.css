@@ -7,30 +7,36 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    width: 90%;
-    margin: 30px auto;
+    width: 80%;
+    padding: 3%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
     flex-wrap: wrap;
 }
 
 .about-container>div {
     flex: 1 0 200px;
     height: 500px;
-    padding: 5px;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 .lable-text {
     display: flex;
-    border-left:1px solid var(--sec-color);
+    flex-direction: column;
     justify-content: center;
-    width: 70%;
-    margin-top: 4%;
-    margin-left: 10%;
+    margin: 0 5%;
+    margin-bottom: 10rem;
 }
 
 .lable-text>p {
-    width: 90%;
-    text-align: start;
-    font-size: 1.2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "fantasy", serif;
+}
+
+.lable-text>p:first-child {
+    font-size: 6rem;
 }
 
 .pic>img {
@@ -107,8 +113,15 @@
 
 
 @media (max-width: 1200px) {
+    .lable-text {
+        margin-bottom: 0;
+    }
     .lable-text>p {
         font-size: 1rem;
+    }
+
+    .lable-text>p:first-child {
+        font-size: 2rem;
     }
 
     .text-box {

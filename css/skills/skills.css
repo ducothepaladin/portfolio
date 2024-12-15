@@ -5,7 +5,8 @@
   align-items: center;
   margin: 0 auto;
   box-sizing: border-box;
-  height: 73vh;
+  height: 64vh;
+  gap: 2rem;
 }
 
 .skill-container > div {
