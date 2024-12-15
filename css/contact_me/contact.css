@@ -25,6 +25,9 @@
   padding-left: 20px;
   transition: all 0.5s;
   opacity: 0;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 .link-animate {
@@ -39,10 +42,6 @@
 @media (max-width: 1300px) {
   .contact-display > p {
     font-size: 3rem;
-  }
-
-  .link-appear {
-    gap: 5px;
   }
 
   .link-appear > li > a {
@@ -61,6 +60,6 @@
   }
 
   .link-appear > li > a {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
