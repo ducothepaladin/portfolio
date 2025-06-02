@@ -24,7 +24,7 @@ Array.prototype.createObjects = function () {
       }
     });
   });
-
+ 
   return objects;
 };
 

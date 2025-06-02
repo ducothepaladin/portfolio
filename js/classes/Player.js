@@ -207,7 +207,7 @@ const player = {
         textBox.textRef.style.display = "block";
       } else {
         textBox.textRef.style.opacity = 0;
-        textBox.textRef.style.display = "none";
+        textBox.textRef.style.display = "none"; 
       }
     }
 

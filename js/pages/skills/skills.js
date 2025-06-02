@@ -11,7 +11,7 @@ let stopScroll = false,
 const details = [
   {
     title: "HTML",
-    exp: "8 months",
+    exp: "1yr",
     icon: "fa-brands fa-html5",
     story:
       "HTML was my first step into web development. I learned it from a FreeCodeCamp YouTube video, and I felt really satisfied seeing whatever I wrote appear on the webpage. It marked the beginning of my journey into this field.",
@@ -19,7 +19,7 @@ const details = [
   },
   {
     title: "CSS",
-    exp: "8 months",
+    exp: "1yr",
     icon: "fa-brands fa-css3-alt",
     story:
       "Like HTML, CSS was also one of my first steps into web development. I still remember how much I loved seeing the color of my content change with just a single line of code. Those were exciting moments!",
@@ -27,7 +27,7 @@ const details = [
   },
   {
     title: "JavaScript",
-    exp: "8 months",
+    exp: "1yr",
     icon: "fa-brands fa-js",
     story:
       "Ok, let me tell you a brief story of a nightmare: JavaScript. When I first started with it, JavaScript felt like a supervillain, my very first programming language and a tough one to crack. So, I took a class from Fairway Technology and learned the basics of programming with Java, which made JavaScript much easier to tackle.And I also took a class from freecodecamp website, it give a lot help to me. Now, JavaScript has become my favorite language. I love seeing the progress!",
@@ -35,7 +35,7 @@ const details = [
   },
   {
     title: "Bootstrap",
-    exp: "6 months",
+    exp: "1yr",
     icon: "fa-brands fa-bootstrap",
     story:
       "Bootstrap was my very first framework. There’s not much of a story there, I learned it, got the hang of it, and started using it. It felt pretty easy to work with!",
@@ -43,7 +43,7 @@ const details = [
   },
   {
     title: "React",
-    exp: "6 months",
+    exp: "1yr",
     icon: "fa-brands fa-react",
     story:
       "Learning React makes me angry sometimes. It makes handling things so much easier compared to vanilla JS, which is great, but there's still a lot for me to learn. I love using it, and I’m excited about the progress and eager to build more projects with it!",
@@ -59,7 +59,7 @@ const details = [
   },
   {
     title: "Laravel",
-    exp: "2 months",
+    exp: "3 months",
     icon: "fa-brands fa-laravel",
     story:
       "Laravel is still a work in progress for me, but I’ve got a good grasp of the concept, and I believe it won’t take long to get comfortable with it. I’m actively working with it now, and loving the progress!",
